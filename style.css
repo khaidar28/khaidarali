@@ -1,0 +1,73 @@
+body{
+    margin-top: 30px;
+}
+.jumbotron{
+    min-height: 100vh;
+    color: #fff;
+    background: url(img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.jumbotron .conten{
+    margin: 100px auto;
+}
+.conten p{
+    text-shadow: 5px 5px 10px rgba(165, 159, 159, 0.5);
+}
+.jumbotron .conten img{
+ width: 200px;
+ height: 180px;
+box-shadow: 0px 0px 3px 3px rgba(0,0,0,.6); 
+transition:  1s;
+}
+.jumbotron img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.about{
+   
+    min-height: 100vh;
+    background-color: rgba(165, 159, 159, 0.5);
+}
+.paragraf1,.paragraf2{
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: 2s;
+}
+.paragraf2{
+    transform: translate(50px,0);
+}
+.paragraf1.pBaru, .paragraf2.pBaru{
+    opacity: 1;
+    transform: translate(0,0);
+}
+ hr{
+    width: 170px;
+   border-bottom: 3px solid black;
+}
+.portfolio{
+    background-color: rgba(165, 159, 159, 0.5);
+}
+.portfolio .thumbnail{
+    opacity: 0;
+    transition: 3s;
+    transform: translate(0,-50px);
+}
+.portfolio .thumbnail.keluar{
+    opacity: 1;
+    transform: translate(0,0);
+   
+}
+.contact{
+    min-height: 100vh;
+}
+footer{
+    color: #fff;
+    background-color: rgb(41, 39, 39);
+    height: 50px;
+}
+footer p{
+    margin-top: 18px;
+}
